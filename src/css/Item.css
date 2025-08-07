@@ -1,0 +1,45 @@
+.container-item {
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+
+  margin: 15px auto;
+  padding: 1px 30px;
+
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+.title {
+  margin-bottom: 2px;
+  font-weight: normal;
+}
+.status {
+  margin-top: 0;
+}
+.btn-edit,
+.btn-del {
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+  cursor: pointer;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  border: transparent;
+}
+.btn-edit {
+  background: #5cb85c;
+  color: #fff;
+}
+.btn-edit:hover {
+  background: #009700;
+}
+.btn-del {
+  background: #d9534f;
+  color: #fff;
+}
+.btn-del:hover {
+  background: #af241f;
+}

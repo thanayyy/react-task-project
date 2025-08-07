@@ -28,10 +28,29 @@
   font-weight: normal;
   border: 1px solid gray;
 }
+.submit-btn {
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: normal;
+  background: #007bff;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: transparent;
+}
 .text-input:focus,
 .container-form .form-group select:focus {
-  border-color: #007bff; /* สีฟ้า */
+  border-color: #007bff;
   outline: none;
   box-shadow: 2px 2px 8px 4px rgba(0, 123, 255, 0.1);
 }
 
+.submit-btn:hover{
+  transition: 0.5s;
+  background: #0060c7;
+}

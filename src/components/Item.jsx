@@ -1,10 +1,20 @@
-import '../css/Item.css'
-const Item = () => {
+import "../css/Item.css";
+const Item = ({ data,deleteTask,editTask}) => {
   return (
-    <div className='container-item'>
-        <h2>Task List</h2>
-    </div>
-  )
-}
+    <>
+      <div className="container-item">
+        <div>
+          <h1 className="title">{data.title}</h1>
+          <p className="status">Status: {data.status}</p>
+        </div>
 
-export default Item
+        <div className="btn-container">
+          <button className="btn-edit" onClick={()=>editTask(data.id)}>Edit</button>
+          <button className="btn-del" onClick={()=>deleteTask(data.id)}>Delete</button>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Item;
