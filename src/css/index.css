@@ -5,3 +5,14 @@ body{
   max-height: 100vh;
   background: whitesmoke;
 }
+
+.light {
+  background-color: #f6f6f6;
+  color: rgb(0, 26, 255);
+  transition: all 500ms;
+}
+
+.dark {
+  background-color: #1e1e1e;
+  transition: all 500ms;
+}

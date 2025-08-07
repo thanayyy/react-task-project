@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/AddForm.css";
-const AddForm = ({ title, setTitle, status, setStatus,saveTask}) => {
+const AddForm = ({ title, setTitle, status, setStatus,saveTask,editId}) => {
   return (
     <div className="container-form">
       <h1>Task Management</h1>
@@ -17,8 +17,8 @@ const AddForm = ({ title, setTitle, status, setStatus,saveTask}) => {
           <option>In Progress</option>
           <option>Complete</option>
         </select>
-        <button type="submit" className="submit-btn">
-          Add Task
+        <button type="submit" className="submit-btn" >
+          {editId ? "Update Task " : "Add Task"}
         </button>
       </form>
     </div>

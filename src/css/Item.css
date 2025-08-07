@@ -18,7 +18,21 @@
 }
 .status {
   margin-top: 0;
+    font-weight: bold;
 }
+
+.status.todo {
+  color: gold;
+}
+
+.status.inprogress {
+  color: red;
+}
+
+.status.complete {
+  color: green;
+}
+
 .btn-edit,
 .btn-del {
   font-size: 1.2rem;
