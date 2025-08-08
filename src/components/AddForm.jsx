@@ -4,7 +4,7 @@ const AddForm = ({ title, setTitle, status, setStatus,saveTask,editId}) => {
   return (
     <div className="container-form">
       <h1>Task Management</h1>
-      <h2>Add New Task</h2>
+      <h2>{editId ? "Update Task" : "Add New Task"}</h2>
       <form className="form-group" onSubmit={saveTask}>
         <input
           type="text"
