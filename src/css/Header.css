@@ -1,10 +1,10 @@
-/* header พื้นฐาน */
+
 header {
   min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 10px 30px;
   font-weight: bold;
   box-shadow: 0 1px 3px rgba(0,0,0,0.16);
   background-color: #f6f6f6;
@@ -19,14 +19,12 @@ header {
   font-size: 22px;
 }
 
-/* container ของ toggle */
+/* container toggle */
 .theme-container {
   display: flex;
   align-items: center;
   gap: 10px; /* ช่องว่างระหว่างข้อความกับ toggle */
 }
-
-/* icon ปรับตรงนี้ถ้าอยากเปลี่ยนเป็นจริงจัง */
 .theme-container .icon {
   font-weight: normal;
   font-size: 20px;
